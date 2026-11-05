@@ -1,0 +1,148 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --blue-gray: #4d6470;
+  --misty-blue: #a3bac0;
+  --green-gray: #7b9aa0;
+  --black: #030303;
+  --purple-pink: #7a003d;
+  /*     var(); */
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--black);
+  background-color: var(--misty-blue);
+}
+
+.wrapper {
+  max-width: 1200px;
+  /*   margin: 0 auto; */
+  /*   padding: 1rem; */
+}
+header {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: end;
+
+  /*   margin: 1rem; */
+}
+
+h1 {
+  font-size: 45px;
+  color: #380621;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1rem;
+}
+.feature h2 {
+  font-size: 1.5rem;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: end;
+  justify-content: center;
+}
+
+nav a {
+  display: block;
+  color: var(--purple-pink);
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.card {
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  margin-bottom: 5px;
+  background-color: var(--green-gray);
+}
+
+.card-wrapper {
+  margin-top: 2rem;
+  width: 100%;
+  /*   margin: 2rem auto; */
+}
+
+.button {
+  background-color: #1b5e7a;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  /*   display: none; */
+}
+.button:hover {
+  background-color: #327c94;
+}
+
+@media (min-width: 550px) {
+  .card {
+    background-color: var(--purple-pink);
+    color: white;
+    flex: 0 0 48%;
+    padding: 1rem;
+  }
+  .button {
+    display: inline-block;
+  }
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .feature h2 {
+    font-size: 1.5rem;
+    color: #ee6d50;
+  }
+
+  .card h2 {
+    color: #ee6d50;
+  }
+}
+
+@media (min-width: 850px) {
+  .card {
+    padding: 1rem;
+    border: 3px solid var(--blue-gray);
+    /*     font-weight: bold; */
+    font-size: 20px;
+    background-color: #e6f4ea;
+    flex: 0 0 32%;
+    color: var(--purple-pink);
+  }
+
+  .feature h2 {
+    font-size: 1.5rem;
+  }
+  header {
+    justify-content: space-between;
+  }
+}
