@@ -22,6 +22,7 @@ body {
   line-height: 1.5;
   color: var(--black);
   background-color: var(--misty-blue);
+  margin: 0 auto;
 }
 
 .wrapper {
